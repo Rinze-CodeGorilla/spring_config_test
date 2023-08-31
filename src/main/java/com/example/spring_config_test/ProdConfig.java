@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConditionalOnProperty(
-        name = "environment",
-        havingValue = "prod"
-)
+//@ConditionalOnProperty(
+//        name = "environment",
+//        havingValue = "prod"
+//)
 public class ProdConfig {
     @Bean
     public PWGen getGenerator() {
